@@ -4,13 +4,13 @@ Gets path to folder and prints files with same name and size
 
 # Quickstart
 
-You have to start program with a patsh to folder as a parameter. See the following example.
+You have to start program with a path to folder as a parameter. See the following example.
 
 Example of script launch on Linux, Python 3.5:
 
 ```bash
 
-$ python duplicates.py <patsh to folder>
+$ python duplicates.py <path to folder>
 
 ```
 Launching on Windows via CMD or PowerShell is the same. 
