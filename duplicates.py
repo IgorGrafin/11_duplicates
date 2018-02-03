@@ -33,7 +33,9 @@ if __name__ == '__main__':
     try:
         path = sys.argv[1]
     except IndexError:
-        sys.exit("Please, put a file name as a parameter.\n"
+        sys.exit("Please, put a folder path as a parameter.\n"
                  "For example: 'python duplicates.py E:\GitHub' ")
     files_dict = make_files_dict(path)
+    if len(files_dict) == 0:
+        sys.exit("Nothing found in {}".format(path))
     beauty_print(files_dict)
