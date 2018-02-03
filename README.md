@@ -18,7 +18,7 @@ Launching on Windows via CMD or PowerShell is the same.
 Example:
 
 ```
-$ python.exe E:/GitHub/devman/11_duplicates/duplicates.py E:\GitHub\devman\11_duplicates\foldertest\
+$ python.exe E:\GitHub\devman\11_duplicates\foldertest\
 Found 2 files copy1 — копия.txt with size 11 :
 E:\GitHub\devman\11_duplicates\foldertest\copy1 — копия.txt
 E:\GitHub\devman\11_duplicates\foldertest\subfolder1\copy1 — копия.txt
