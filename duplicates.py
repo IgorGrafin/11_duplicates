@@ -36,6 +36,6 @@ if __name__ == '__main__':
         sys.exit("Please, put a folder path as a parameter.\n"
                  "For example: 'python duplicates.py E:\GitHub' ")
     files_dict = make_files_dict(path)
-    if len(files_dict) == 0:
+    if not files_dict:
         sys.exit("Nothing found in {}".format(path))
     beauty_print(files_dict)
