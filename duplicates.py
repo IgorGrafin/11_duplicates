@@ -18,10 +18,11 @@ def make_files_dict(path):
 
 def beauty_print(files_dict):
     for file_name, file_size in files_dict:
-        if len(files_dict[file_name, file_size]) > 1:
+        files_number = len(files_dict[file_name, file_size])
+        if files_number > 1:
             print("Found {0} files {1} with size {2} :".format
                 (
-                len(files_dict[file_name, file_size]),
+                files_number,
                 file_name,
                 file_size
             ))
