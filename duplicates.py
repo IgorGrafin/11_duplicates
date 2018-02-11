@@ -36,4 +36,5 @@ if __name__ == "__main__":
     files_location_dict = make_files_location_dict(path)
     if files_location_dict:
         print_results(files_location_dict)
-    print("Nothing found in {}".format(path))
+    else:
+        print("Nothing found in {}".format(path))
