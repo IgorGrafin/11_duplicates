@@ -15,7 +15,6 @@ def make_files_location_dict(path):
 
 
 def print_results(files_location_dict):
-    # for file_name, file_size in files_location_dict:
     for (file_name, file_size), paths in files_location_dict.items():
         files_number = len(paths)
         if files_number > 1:
@@ -28,14 +27,13 @@ def print_results(files_location_dict):
             print("\n".join(paths))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         path = sys.argv[1]
     except IndexError:
         sys.exit("Please, put a folder path as a parameter.\n"
                  "For example: 'python duplicates.py E:\GitHub' ")
     files_location_dict = make_files_location_dict(path)
-    if not files_location_dict:
-        print("Nothing found in {}".format(path))
-        sys.exit(0)
-    print_results(files_location_dict)
+    if files_location_dict:
+        print_results(files_location_dict)
+    print("Nothing found in {}".format(path))
